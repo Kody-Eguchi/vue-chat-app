@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+  @apply fixed w-full bg-gray-900 shadow-lg top-0;
+  z-index: 20;
+}
+
+nav > div {
+  @apply container max-w-xl flex content-center items-center justify-between h-16 px-4;
+}
+
+nav h1 {
+  @apply text-white text-xl;
+}
+
+nav h1 > strong {
+  @apply text-green-300;
+}
+
+nav .login {
+  @apply right-0 flex ml-auto;
+}
+
+nav button {
+  @apply text-white p-1 rounded px-4;
+}
+
+.avatar {
+  @apply h-8 w-8 rounded-full;
+}
+
+.container-sm {
+  @apply container max-w-xl;
+}
+
+.message {
+  @apply my-2 w-full;
+}
+
+.message span {
+  @apply ml-11 text-xs text-gray-500;
+}
+
+.message .text {
+  @apply mx-2 p-2 rounded-lg text-white;
+}
+
+.bottom {
+  @apply fixed bottom-0 bg-gray-900 shadow-lg w-full;
+}
+
+.bottom form {
+  @apply w-full flex justify-between;
+}
+
+.bottom form input {
+  @apply flex-grow m-2 py-2 px-4 mr-1 rounded border-none bg-gray-700 text-white;
+}
+
+.icon-send {
+  @apply text-gray-500 w-12 h-12 py-2 mr-2;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-600 shadow-lg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-200;
+}
